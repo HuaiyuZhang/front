@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>  <script src="exercise1.js" defer></script>
+  <title>Exercise 1: Thoughts Record</title>
+</head>
+<body>
+  <header>
+    <h1>Exercise 1: Thoughts Record</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Purpose</h2>
+      <p><!-- Purpose content --></p>
+    </section>
+    <section>
+      <h2>Instructions</h2>
+      <ol>
+        <!-- Step-by-step instructions -->
+      </ol>
+    </section>
+    <section>
+      <h2>Complete the Exercise</h2>
+      <form id="thoughtsRecordForm">
+        <!-- Replace 'question' with the actual questions -->
+        <label for="question1">What happened?</label>
+        <input type="text" id="question1" name="question1">
+        <br>
+        <label for="question2">What's in your mind</label>
+        <input type="text" id="question2" name="question2">
+        <!-- Add more questions as needed -->
+        <br>
+        <button type="button" id="submitBtn">Submit</button>
+      </form>
+    </section>
+    <section id="summarySection" style="display:none;">
+      <h2>A summary</h2>
+      <p id="summary"></p>
+      <button type="button" id="exportPDFBtn" onclick="exportToPDF()">Export Summary to PDF</button>
+    </section>
+    
+  </main>
+  <div class="return-btn">
+    <a href="index.html">
+      <button type="button">Return to Index Page</button>
+    </a>
+  </div>
+
+  <footer>
+    <!-- Footer content -->
+  </footer>
+</body>
+</html>

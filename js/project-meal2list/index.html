@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">Meal Planner</h1>
+        <h3 class="center-align" id="monthYear"></h3>
+        <div class="row">
+            <div class="col s12 m6">
+                <div id="calendar" class="row"></div>
+            </div>
+            <div class="col s12 m6">
+                <div id="summary"></div>
+            </div>
+        </div>
+        <div id="mealForm" style="display:none;">
+            <h2 class="center-align">Add Meal</h2>
+            <div class="input-field">
+                <input type="text" id="mealName" name="mealName" required>
+                <label for="mealName">Meal Name</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="rawMaterials" name="rawMaterials" required>
+                <label for="rawMaterials">Raw Materials (comma-separated)</label>
+            </div>
+            <button id="addMealBtn" class="btn waves-effect waves-light">Add Meal</button>
+        </div>
+        <div id="summary"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
